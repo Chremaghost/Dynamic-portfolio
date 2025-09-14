@@ -89,7 +89,6 @@ export function ProjectManager({ isDark }: ProjectManagerProps) {
         </button>
       </div>
 
-      {/* Project Form */}
       {(showForm || editingProject) && (
         <ProjectForm
           isDark={isDark}
@@ -103,7 +102,6 @@ export function ProjectManager({ isDark }: ProjectManagerProps) {
         />
       )}
 
-      {/* Projects Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
           <div
@@ -114,7 +112,6 @@ export function ProjectManager({ isDark }: ProjectManagerProps) {
                 : 'bg-white/50 shadow-[8px_8px_16px_#d1d5db,-8px_-8px_16px_#ffffff] backdrop-blur-md border border-black/5'
             }`}
           >
-            {/* Glassmorphism overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm" />
             
             <div className="relative p-6 space-y-4">

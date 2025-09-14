@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import { PortfolioPage } from '@/components/portfolio/PortfolioPage';
 
-// Simuler les données - en production, ces données viendraient d'une base de données
 const portfolioLinks = [
   {
     id: '1',

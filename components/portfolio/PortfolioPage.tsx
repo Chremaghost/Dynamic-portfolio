@@ -37,7 +37,6 @@ export function PortfolioPage({ portfolioLink, profile }: PortfolioPageProps) {
     <div className={`min-h-screen transition-colors duration-500 ${
       isDark ? 'bg-gray-900' : 'bg-gray-100'
     }`}>
-      {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-md border-b border-opacity-20">
         <div className="container mx-auto px-4 py-4">
           <div className={`flex justify-between items-center p-4 rounded-2xl transition-all duration-300 ${
@@ -80,7 +79,6 @@ export function PortfolioPage({ portfolioLink, profile }: PortfolioPageProps) {
       </header>
 
       <div className="container mx-auto px-4 py-8">
-        {/* Hero Section */}
         <section className="mb-16">
           <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-2 space-y-6">
@@ -158,7 +156,6 @@ export function PortfolioPage({ portfolioLink, profile }: PortfolioPageProps) {
           </div>
         </section>
 
-        {/* Skills Section */}
         <section className="mb-16">
           <h2 className={`text-3xl font-bold mb-8 ${isDark ? 'text-white' : 'text-gray-800'}`}>
             Compétences
@@ -185,7 +182,6 @@ export function PortfolioPage({ portfolioLink, profile }: PortfolioPageProps) {
           </div>
         </section>
 
-        {/* Experience Section */}
         <section className="mb-16">
           <h2 className={`text-3xl font-bold mb-8 ${isDark ? 'text-white' : 'text-gray-800'}`}>
             Expérience Professionnelle
@@ -238,7 +234,6 @@ export function PortfolioPage({ portfolioLink, profile }: PortfolioPageProps) {
           </div>
         </section>
 
-        {/* Education Section */}
         <section className="mb-16">
           <h2 className={`text-3xl font-bold mb-8 ${isDark ? 'text-white' : 'text-gray-800'}`}>
             Formation
@@ -283,7 +278,6 @@ export function PortfolioPage({ portfolioLink, profile }: PortfolioPageProps) {
           </div>
         </section>
 
-        {/* Languages Section */}
         <section className="mb-16">
           <h2 className={`text-3xl font-bold mb-8 ${isDark ? 'text-white' : 'text-gray-800'}`}>
             Langues
@@ -303,7 +297,6 @@ export function PortfolioPage({ portfolioLink, profile }: PortfolioPageProps) {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section className="mb-16">
           <h2 className={`text-3xl font-bold mb-8 ${isDark ? 'text-white' : 'text-gray-800'}`}>
             Projets
@@ -311,7 +304,6 @@ export function PortfolioPage({ portfolioLink, profile }: PortfolioPageProps) {
           <ProjectCarousel projects={filteredProjects} isDark={isDark} />
         </section>
 
-        {/* Contact Section */}
         <section className="mb-16">
           <h2 className={`text-3xl font-bold mb-8 ${isDark ? 'text-white' : 'text-gray-800'}`}>
             Contact

@@ -33,7 +33,6 @@ export function PhotoGallery({ isDark }: PhotoGalleryProps) {
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
 
   const handleUpload = () => {
-    // Simuler l'upload d'une photo
     const newPhoto: Photo = {
       id: Date.now().toString(),
       url: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -78,7 +77,6 @@ export function PhotoGallery({ isDark }: PhotoGalleryProps) {
         </button>
       </div>
 
-      {/* Upload Area */}
       <div
         className={`border-2 border-dashed rounded-2xl p-8 text-center transition-all duration-300 hover:border-purple-500 cursor-pointer ${
           isDark
@@ -96,7 +94,6 @@ export function PhotoGallery({ isDark }: PhotoGalleryProps) {
         </p>
       </div>
 
-      {/* Photos Grid */}
       <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
         {photos.map((photo) => (
           <div
@@ -114,7 +111,6 @@ export function PhotoGallery({ isDark }: PhotoGalleryProps) {
               className="w-full h-full object-cover"
             />
             
-            {/* Overlay */}
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <div className="flex space-x-2">
                 <button
@@ -142,7 +138,6 @@ export function PhotoGallery({ isDark }: PhotoGalleryProps) {
               </div>
             </div>
 
-            {/* Profile Photo Badge */}
             {photo.isProfilePhoto && (
               <div className="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 text-xs rounded-md font-medium">
                 Profil
@@ -152,7 +147,6 @@ export function PhotoGallery({ isDark }: PhotoGalleryProps) {
         ))}
       </div>
 
-      {/* Photo Viewer Modal */}
       {selectedPhoto && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className={`relative max-w-4xl max-h-[90vh] rounded-2xl overflow-hidden ${

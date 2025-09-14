@@ -118,7 +118,6 @@ export function ProjectCarousel({ projects, isDark }: ProjectCarouselProps) {
         </div>
       </div>
 
-      {/* Navigation */}
       {projects.length > 1 && (
         <>
           <button
@@ -142,7 +141,6 @@ export function ProjectCarousel({ projects, isDark }: ProjectCarouselProps) {
             <ChevronRight className="w-5 h-5" />
           </button>
 
-          {/* Dots indicator */}
           <div className="flex justify-center space-x-2 mt-6">
             {projects.map((_, index) => (
               <button

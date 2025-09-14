@@ -106,7 +106,6 @@ export function PortfolioLinksManager({ isDark }: PortfolioLinksManagerProps) {
         </button>
       </div>
 
-      {/* Link Form */}
       {(showForm || editingLink) && (
         <LinkForm
           isDark={isDark}
@@ -119,7 +118,6 @@ export function PortfolioLinksManager({ isDark }: PortfolioLinksManagerProps) {
         />
       )}
 
-      {/* Links Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {portfolioLinks
           .sort((a, b) => a.order - b.order)
@@ -244,7 +242,6 @@ function LinkForm({ isDark, link, onSave, onCancel }: LinkFormProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Générer le slug automatiquement si pas fourni
     const slug = formData.slug || formData.title.toLowerCase()
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/(^-|-$)/g, '');

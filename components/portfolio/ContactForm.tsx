@@ -19,7 +19,6 @@ export function ContactForm({ isDark }: ContactFormProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Ici vous pourriez intégrer avec un service d'email comme EmailJS
     console.log('Form submitted:', formData);
     setIsSubmitted(true);
     setTimeout(() => {

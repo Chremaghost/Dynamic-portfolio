@@ -26,7 +26,6 @@ export default function Dashboard() {
     <div className={`min-h-screen transition-colors duration-500 ${
       isDark ? 'bg-gray-900' : 'bg-gray-100'
     }`}>
-      {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-md border-b border-opacity-20">
         <div className="container mx-auto px-4 py-4">
           <div className={`flex justify-between items-center p-4 rounded-2xl transition-all duration-300 ${
@@ -58,10 +57,8 @@ export default function Dashboard() {
 
       <div className="container mx-auto px-4 py-8">
         <div className="grid lg:grid-cols-4 gap-8">
-          {/* Sidebar Navigation */}
           <div className="lg:col-span-1">
             <nav className="space-y-4">
-              {/* Portfolio Links */}
               <div className={`p-6 rounded-2xl transition-all duration-300 ${
                 isDark 
                   ? 'bg-gray-800 shadow-[8px_8px_16px_#1f2937,-8px_-8px_16px_#374151]' 
@@ -96,7 +93,6 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              {/* Admin Actions */}
               <div className={`p-6 rounded-2xl transition-all duration-300 ${
                 isDark 
                   ? 'bg-gray-800 shadow-[8px_8px_16px_#1f2937,-8px_-8px_16px_#374151]' 
@@ -149,7 +145,6 @@ export default function Dashboard() {
             </nav>
           </div>
 
-          {/* Main Content */}
           <div className="lg:col-span-3">
             <div className={`p-8 rounded-2xl transition-all duration-300 ${
               isDark 
@@ -167,7 +162,6 @@ export default function Dashboard() {
                     </p>
                   </div>
 
-                  {/* Quick Stats */}
                   <div className="grid md:grid-cols-3 gap-6">
                     {[
                       { title: 'Projets', value: '12', change: '+3 ce mois' },
@@ -197,7 +191,6 @@ export default function Dashboard() {
                     ))}
                   </div>
 
-                  {/* Quick Actions */}
                   <div>
                     <h3 className={`text-xl font-semibold mb-4 ${isDark ? 'text-white' : 'text-gray-800'}`}>
                       Actions Rapides

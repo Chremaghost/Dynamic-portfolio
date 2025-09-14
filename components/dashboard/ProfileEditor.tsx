@@ -27,7 +27,6 @@ export function ProfileEditor({ isDark }: ProfileEditorProps) {
 
   const handleSave = () => {
     setSavedProfile(profile);
-    // Ici on sauvegarderait en base de données
   };
 
   const sections = [
@@ -88,7 +87,6 @@ export function ProfileEditor({ isDark }: ProfileEditorProps) {
       )}
 
       <div className="grid lg:grid-cols-2 gap-8">
-        {/* Form Fields */}
         <div className="space-y-6">
           {sections.map((section, sectionIndex) => (
             <div
@@ -134,7 +132,6 @@ export function ProfileEditor({ isDark }: ProfileEditorProps) {
           ))}
         </div>
 
-        {/* Text Areas */}
         <div className="space-y-6">
           {textAreas.map((field) => (
             <div
